@@ -91,6 +91,7 @@ class _SelectionListState extends State<SelectionList> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                        Container(
+                          width: double.infinity,
                           padding: const EdgeInsets.all(15.0),
                           color: widget.theme?.backgroundColor2 ?? Colors.white,
                           child: Text(
@@ -119,6 +120,7 @@ class _SelectionListState extends State<SelectionList> {
                           ),
                         ),
                         Container(
+                          width: double.infinity,
                           padding: const EdgeInsets.all(15.0),
                           color: widget.theme?.backgroundColor2 ?? Colors.white,
                           child: Text(
