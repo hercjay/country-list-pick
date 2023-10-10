@@ -93,7 +93,7 @@ class _SelectionListState extends State<SelectionList> {
                         Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Text(
-                            widget.theme?.searchText ?? 'SEARCH',
+                            widget.theme?.searchText ?? 'SEARCH COUNTRY',
                             style: TextStyle(
                                 color:
                                     widget.theme?.labelColor ?? Colors.black),
