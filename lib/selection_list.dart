@@ -90,10 +90,11 @@ class _SelectionListState extends State<SelectionList> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Padding(
+                       Container(
                           padding: const EdgeInsets.all(15.0),
+                          color: widget.theme?.backgroundColor2 ?? Colors.white,
                           child: Text(
-                            widget.theme?.searchText ?? 'SEARCH COUNTRY',
+                            widget.theme?.searchText ?? 'SEARCH',
                             style: TextStyle(
                                 color:
                                     widget.theme?.labelColor ?? Colors.black),
@@ -117,8 +118,9 @@ class _SelectionListState extends State<SelectionList> {
                             onChanged: _filterElements,
                           ),
                         ),
-                        Padding(
+                        Container(
                           padding: const EdgeInsets.all(15.0),
+                          color: widget.theme?.backgroundColor2 ?? Colors.white,
                           child: Text(
                             widget.theme?.lastPickText ?? 'LAST PICK',
                             style: TextStyle(
@@ -144,7 +146,10 @@ class _SelectionListState extends State<SelectionList> {
                             ),
                           ),
                         ),
-                        SizedBox(height: 15),
+                        Container(
+                          height: 15,
+                          color: widget.theme?.backgroundColor ?? Colors.white,
+                        ),
                       ],
                     ),
                   ),
